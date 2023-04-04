@@ -6,6 +6,9 @@
 ![Storage: UserDefaults](https://user-images.githubusercontent.com/98527464/229796902-9930df7a-00c2-42fd-a0d1-99bd51a7020b.svg)
 
 # Delivery App Menu Tab
+![photo_2023-04-04 16 38 59](https://user-images.githubusercontent.com/98527464/229811976-c6cf2774-fbc6-4de9-a81f-22c15d0c4426.jpg)
+![photo_2023-04-04 16 38 49](https://user-images.githubusercontent.com/98527464/229811638-81d24259-d835-41a5-905a-fca58be27aa7.jpg)
+![photo_2023-04-04 16 39 03](https://user-images.githubusercontent.com/98527464/229812126-9f106bed-712c-4043-a26c-93d457e9b131.jpg)
 
 Основное:
 >  - [x] Реализовать главный экран для приложения доставки еды
