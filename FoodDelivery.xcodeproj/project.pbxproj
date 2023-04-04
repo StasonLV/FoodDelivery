@@ -101,6 +101,7 @@
 		84131AB029DAE536001D16DD /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				84131ABF29DAE540001D16DD /* Info.plist */,
 				84131AF429DB653E001D16DD /* ApplicationLayer */,
 				84131AD029DB1925001D16DD /* DataTransfer */,
 				84131ACF29DB1889001D16DD /* NetworkLayer */,
@@ -173,7 +174,6 @@
 				84131AB329DAE536001D16DD /* SceneDelegate.swift */,
 				84131ABC29DAE540001D16DD /* LaunchScreen.storyboard */,
 				84131ABA29DAE540001D16DD /* Assets.xcassets */,
-				84131ABF29DAE540001D16DD /* Info.plist */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";

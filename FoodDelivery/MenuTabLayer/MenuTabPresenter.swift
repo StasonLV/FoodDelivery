@@ -96,8 +96,7 @@ private extension MenuTabPresenter {
                 DispatchQueue.main.async {
                     self.controller?.reloadData()
                 }
-            case .failure(let error):
-                print("ERROR --> \(error)")
+            case .failure( _):
                 DispatchQueue.main.async {
                     self.controller?.present(AppAlerts.connectionAlert, animated: true)
                 }
