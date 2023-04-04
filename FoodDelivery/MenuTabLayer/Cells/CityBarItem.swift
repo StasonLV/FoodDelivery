@@ -23,7 +23,7 @@ final class CityBarItem: UIView {
     }
 }
 
-// MARK: - Config Appearance
+// MARK: - Setup UI
 private extension CityBarItem {
     
     func configAppearance() {
@@ -36,7 +36,7 @@ private extension CityBarItem {
     }
 }
 
-// MARK: - Make Constraints
+// MARK: - Constraints
 private extension CityBarItem {
     
     func makeConstraints() {

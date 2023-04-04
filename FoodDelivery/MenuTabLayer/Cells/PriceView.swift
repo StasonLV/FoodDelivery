@@ -31,7 +31,7 @@ final class PriceView: UIView {
     }
 }
 
-// MARK: - Config Appearance
+// MARK: - Setup UI
 private extension PriceView {
     
     func configAppearance() {
@@ -45,7 +45,7 @@ private extension PriceView {
     }
 }
 
-// MARK: - Make Constraints
+// MARK: - Constraints
 private extension PriceView {
     
     func makeConstraints() {

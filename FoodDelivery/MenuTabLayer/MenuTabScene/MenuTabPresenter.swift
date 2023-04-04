@@ -38,6 +38,7 @@ final class MenuTabPresenter {
     }
 }
 
+//MARK: Presentation Logic
 extension MenuTabPresenter: PresentationLogic {
     
     var numberOfRowsInSection: Int {
@@ -87,12 +88,14 @@ extension MenuTabPresenter: PresentationLogic {
     }
 }
 
+//MARK: On App Dismiss Logic
 extension MenuTabPresenter: OnAppDisnissLogic {
     func saveMenuArray() {
         interactor.saveMenuArray(array: self.foodArray)
     }
 }
 
+//MARK: Методы отображения
 private extension MenuTabPresenter {
     
     func fetchData() {

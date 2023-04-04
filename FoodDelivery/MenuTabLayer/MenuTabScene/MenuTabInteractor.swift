@@ -17,7 +17,7 @@ protocol FetchingLogic: AnyObject {
         ) -> ())
 }
 
-protocol SavingLogic {
+protocol SavingAndLoadingOfflineLogic {
     func saveMenuArray(array: [MenuTabEntity])
     func loadMenuArray() -> [MenuTabEntity]
 }
@@ -35,7 +35,8 @@ final class MenuTabInteractor {
     }
 }
 
-extension MenuTabInteractor: SavingLogic {
+//MARK: Saving And Loading Offline Logic
+extension MenuTabInteractor: SavingAndLoadingOfflineLogic {
     func saveMenuArray(array: [MenuTabEntity]) {
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(array) {
@@ -55,6 +56,7 @@ extension MenuTabInteractor: SavingLogic {
     }
 }
 
+//MARK: Fetching Logic
 extension MenuTabInteractor: FetchingLogic {
     
     func fetchImageData(

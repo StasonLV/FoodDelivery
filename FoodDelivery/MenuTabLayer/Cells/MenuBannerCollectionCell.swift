@@ -24,7 +24,7 @@ final class MenuBannerCollectionCell: UICollectionViewCell {
     }
 }
 
-// MARK: - Config Appearance
+// MARK: - Setup UI
 private extension MenuBannerCollectionCell {
     
     func configAppearance() {
@@ -35,7 +35,7 @@ private extension MenuBannerCollectionCell {
     }
 }
 
-// MARK: - Make Constraints
+// MARK: - Constraints
 private extension MenuBannerCollectionCell {
     
     func makeConstraints() {

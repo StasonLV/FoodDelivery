@@ -47,7 +47,7 @@ extension CathegoryChipsCell {
     }
 }
 
-// MARK: - Logic
+// MARK: - Обработка стэйтов
 private extension CathegoryChipsCell {
     
     func isSelected(bool: Bool) {
@@ -83,7 +83,7 @@ private extension CathegoryChipsCell {
     }
 }
 
-// MARK: - Config Appearance
+// MARK: - Setup UI
 private extension CathegoryChipsCell {
     
     func configAppearance() {
@@ -92,7 +92,7 @@ private extension CathegoryChipsCell {
     }
 }
 
-// MARK: - Make Constraints
+// MARK: - Constraints
 private extension CathegoryChipsCell {
     
     func makeConstraints() {

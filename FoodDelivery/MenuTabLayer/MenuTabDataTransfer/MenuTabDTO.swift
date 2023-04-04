@@ -7,6 +7,7 @@
 
 import Foundation
 
+//объект для дата трансфера приходящего массива
 struct MenuTabDTO: Codable {
     let type: String?
     let menuItems: [MenuItem]?

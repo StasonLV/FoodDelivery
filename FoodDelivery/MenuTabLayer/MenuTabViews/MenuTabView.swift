@@ -24,6 +24,7 @@ final class MenuTabView: UIView {
     private lazy var collectionView = UICollectionView(frame: .zero,
                                                        collectionViewLayout: createLayout())
     
+    //MARK: установка делегатов, инициализация
     var collectionViewDelegate: UICollectionViewDelegate? {
         get {
             nil
@@ -106,7 +107,7 @@ extension MenuTabView {
     }
 }
 
-// MARK: - Config Appearance
+// MARK: - Setup UI
 private extension MenuTabView {
     
     func configAppearance() {
@@ -135,7 +136,7 @@ private extension MenuTabView {
     }
 }
 
-// MARK: - Make Constraints
+// MARK: - Constraints
 private extension MenuTabView {
     
     func makeConstraints() {
@@ -170,7 +171,7 @@ private extension MenuTabView {
     }
 }
 
-// MARK: - Make Compositional Layout
+// MARK: - Сборка лэйаута
 private extension MenuTabView {
     
     func createLayout() -> UICollectionViewLayout {

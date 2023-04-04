@@ -51,7 +51,7 @@ extension MenuTableCell {
     }
 }
 
-// MARK: - Config Appearance
+// MARK: - Setup UI
 private extension MenuTableCell {
     
     func configAppearance() {
@@ -69,7 +69,7 @@ private extension MenuTableCell {
     }
 }
 
-// MARK: - Make Constraints
+// MARK: - Constraints
 private extension MenuTableCell {
     
     func makeConstraints() {
