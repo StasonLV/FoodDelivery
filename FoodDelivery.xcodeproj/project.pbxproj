@@ -9,21 +9,66 @@
 /* Begin PBXBuildFile section */
 		84131AB229DAE536001D16DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AB129DAE536001D16DD /* AppDelegate.swift */; };
 		84131AB429DAE536001D16DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AB329DAE536001D16DD /* SceneDelegate.swift */; };
-		84131AB629DAE536001D16DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AB529DAE536001D16DD /* ViewController.swift */; };
-		84131AB929DAE536001D16DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84131AB729DAE536001D16DD /* Main.storyboard */; };
+		84131AB629DAE536001D16DD /* MenuTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AB529DAE536001D16DD /* MenuTabController.swift */; };
 		84131ABB29DAE540001D16DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84131ABA29DAE540001D16DD /* Assets.xcassets */; };
 		84131ABE29DAE540001D16DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84131ABC29DAE540001D16DD /* LaunchScreen.storyboard */; };
+		84131AC629DAE5CD001D16DD /* TabAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AC529DAE5CD001D16DD /* TabAssembly.swift */; };
+		84131AC829DAE648001D16DD /* MenuTabAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AC729DAE648001D16DD /* MenuTabAssembly.swift */; };
+		84131ACA29DAED2A001D16DD /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AC929DAED2A001D16DD /* NetworkWorker.swift */; };
+		84131ACC29DAED84001D16DD /* MenuTabInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131ACB29DAED84001D16DD /* MenuTabInteractor.swift */; };
+		84131ACE29DAEE58001D16DD /* MenuTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131ACD29DAEE58001D16DD /* MenuTabPresenter.swift */; };
+		84131AD229DB1957001D16DD /* MenuTabDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AD129DB1957001D16DD /* MenuTabDTO.swift */; };
+		84131AD729DB23F3001D16DD /* Cathegories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AD629DB23F3001D16DD /* Cathegories.swift */; };
+		84131AD929DB2605001D16DD /* MenuTabEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AD829DB2605001D16DD /* MenuTabEntity.swift */; };
+		84131ADB29DB27B8001D16DD /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131ADA29DB27B8001D16DD /* Sections.swift */; };
+		84131ADD29DB2A39001D16DD /* MenuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131ADC29DB2A39001D16DD /* MenuTabView.swift */; };
+		84131AE029DB2F44001D16DD /* CathegoryChipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131ADF29DB2F44001D16DD /* CathegoryChipsCell.swift */; };
+		84131AE229DB2F81001D16DD /* MenuBannerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AE129DB2F81001D16DD /* MenuBannerCollectionCell.swift */; };
+		84131AE429DB2FE4001D16DD /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AE329DB2FE4001D16DD /* MenuTableCell.swift */; };
+		84131AE629DB301D001D16DD /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AE529DB301D001D16DD /* PriceView.swift */; };
+		84131AE829DB30AE001D16DD /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AE729DB30AE001D16DD /* TableHeaderView.swift */; };
+		84131AEA29DB4DF0001D16DD /* CityBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AE929DB4DEE001D16DD /* CityBarItem.swift */; };
+		84131AF029DB60FA001D16DD /* sf-ui-display-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84131AEC29DB60F9001D16DD /* sf-ui-display-regular.ttf */; };
+		84131AF129DB60FA001D16DD /* sf-ui-display-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84131AED29DB60FA001D16DD /* sf-ui-display-medium.ttf */; };
+		84131AF729DB65F6001D16DD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AF629DB65F6001D16DD /* Fonts.swift */; };
+		84131AF929DB660F001D16DD /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AF829DB660F001D16DD /* SFSymbols.swift */; };
+		84131AFB29DB6622001D16DD /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131AFA29DB6622001D16DD /* ColorConstants.swift */; };
+		84131B0529DC1CFD001D16DD /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84131B0429DC1CFD001D16DD /* sf-ui-display-bold.ttf */; };
+		84131B0829DC2BFE001D16DD /* ConnectionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131B0729DC2BFE001D16DD /* ConnectionAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84131AAE29DAE536001D16DD /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84131AB129DAE536001D16DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84131AB329DAE536001D16DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84131AB529DAE536001D16DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84131AB829DAE536001D16DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84131AB529DAE536001D16DD /* MenuTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabController.swift; sourceTree = "<group>"; };
 		84131ABA29DAE540001D16DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84131ABD29DAE540001D16DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84131ABF29DAE540001D16DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84131AC529DAE5CD001D16DD /* TabAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAssembly.swift; sourceTree = "<group>"; };
+		84131AC729DAE648001D16DD /* MenuTabAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabAssembly.swift; sourceTree = "<group>"; };
+		84131AC929DAED2A001D16DD /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
+		84131ACB29DAED84001D16DD /* MenuTabInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabInteractor.swift; sourceTree = "<group>"; };
+		84131ACD29DAEE58001D16DD /* MenuTabPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabPresenter.swift; sourceTree = "<group>"; };
+		84131AD129DB1957001D16DD /* MenuTabDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabDTO.swift; sourceTree = "<group>"; };
+		84131AD629DB23F3001D16DD /* Cathegories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cathegories.swift; sourceTree = "<group>"; };
+		84131AD829DB2605001D16DD /* MenuTabEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabEntity.swift; sourceTree = "<group>"; };
+		84131ADA29DB27B8001D16DD /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		84131ADC29DB2A39001D16DD /* MenuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabView.swift; sourceTree = "<group>"; };
+		84131ADF29DB2F44001D16DD /* CathegoryChipsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryChipsCell.swift; sourceTree = "<group>"; };
+		84131AE129DB2F81001D16DD /* MenuBannerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBannerCollectionCell.swift; sourceTree = "<group>"; };
+		84131AE329DB2FE4001D16DD /* MenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
+		84131AE529DB301D001D16DD /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		84131AE729DB30AE001D16DD /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		84131AE929DB4DEE001D16DD /* CityBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBarItem.swift; sourceTree = "<group>"; };
+		84131AEC29DB60F9001D16DD /* sf-ui-display-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-regular.ttf"; sourceTree = "<group>"; };
+		84131AED29DB60FA001D16DD /* sf-ui-display-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-medium.ttf"; sourceTree = "<group>"; };
+		84131AF629DB65F6001D16DD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		84131AF829DB660F001D16DD /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		84131AFA29DB6622001D16DD /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		84131B0429DC1CFD001D16DD /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
+		84131B0629DC1D03001D16DD /* sf-ui-display-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-semibold.ttf"; sourceTree = "<group>"; };
+		84131B0729DC2BFE001D16DD /* ConnectionAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +101,118 @@
 		84131AB029DAE536001D16DD /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				84131AB129DAE536001D16DD /* AppDelegate.swift */,
-				84131AB329DAE536001D16DD /* SceneDelegate.swift */,
-				84131AB529DAE536001D16DD /* ViewController.swift */,
-				84131AB729DAE536001D16DD /* Main.storyboard */,
-				84131ABA29DAE540001D16DD /* Assets.xcassets */,
-				84131ABC29DAE540001D16DD /* LaunchScreen.storyboard */,
-				84131ABF29DAE540001D16DD /* Info.plist */,
+				84131AF429DB653E001D16DD /* ApplicationLayer */,
+				84131AD029DB1925001D16DD /* DataTransfer */,
+				84131ACF29DB1889001D16DD /* NetworkLayer */,
+				84131AD329DB1B0A001D16DD /* MenuTabLayer */,
 			);
 			path = FoodDelivery;
+			sourceTree = "<group>";
+		};
+		84131ACF29DB1889001D16DD /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				84131AC929DAED2A001D16DD /* NetworkWorker.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		84131AD029DB1925001D16DD /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				84131AD129DB1957001D16DD /* MenuTabDTO.swift */,
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
+		84131AD329DB1B0A001D16DD /* MenuTabLayer */ = {
+			isa = PBXGroup;
+			children = (
+				84131B0A29DC2FE8001D16DD /* MenuTabViews */,
+				84131B0929DC2FCA001D16DD /* DataStructures */,
+				84131ADE29DB2F29001D16DD /* Cells */,
+				84131AC729DAE648001D16DD /* MenuTabAssembly.swift */,
+				84131ACB29DAED84001D16DD /* MenuTabInteractor.swift */,
+				84131AB529DAE536001D16DD /* MenuTabController.swift */,
+				84131ACD29DAEE58001D16DD /* MenuTabPresenter.swift */,
+			);
+			path = MenuTabLayer;
+			sourceTree = "<group>";
+		};
+		84131ADE29DB2F29001D16DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84131ADF29DB2F44001D16DD /* CathegoryChipsCell.swift */,
+				84131AE129DB2F81001D16DD /* MenuBannerCollectionCell.swift */,
+				84131AE329DB2FE4001D16DD /* MenuTableCell.swift */,
+				84131AE529DB301D001D16DD /* PriceView.swift */,
+				84131AE929DB4DEE001D16DD /* CityBarItem.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84131AEB29DB60DB001D16DD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84131B0429DC1CFD001D16DD /* sf-ui-display-bold.ttf */,
+				84131B0629DC1D03001D16DD /* sf-ui-display-semibold.ttf */,
+				84131AED29DB60FA001D16DD /* sf-ui-display-medium.ttf */,
+				84131AEC29DB60F9001D16DD /* sf-ui-display-regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84131AF429DB653E001D16DD /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				84131B0B29DC3001001D16DD /* Alerts */,
+				84131AEB29DB60DB001D16DD /* Fonts */,
+				84131AF529DB65C3001D16DD /* Constants */,
+				84131AC529DAE5CD001D16DD /* TabAssembly.swift */,
+				84131AB129DAE536001D16DD /* AppDelegate.swift */,
+				84131AB329DAE536001D16DD /* SceneDelegate.swift */,
+				84131ABC29DAE540001D16DD /* LaunchScreen.storyboard */,
+				84131ABA29DAE540001D16DD /* Assets.xcassets */,
+				84131ABF29DAE540001D16DD /* Info.plist */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		84131AF529DB65C3001D16DD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84131AF629DB65F6001D16DD /* Fonts.swift */,
+				84131AF829DB660F001D16DD /* SFSymbols.swift */,
+				84131AFA29DB6622001D16DD /* ColorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84131B0929DC2FCA001D16DD /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				84131AD629DB23F3001D16DD /* Cathegories.swift */,
+				84131ADA29DB27B8001D16DD /* Sections.swift */,
+				84131AD829DB2605001D16DD /* MenuTabEntity.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		84131B0A29DC2FE8001D16DD /* MenuTabViews */ = {
+			isa = PBXGroup;
+			children = (
+				84131AE729DB30AE001D16DD /* TableHeaderView.swift */,
+				84131ADC29DB2A39001D16DD /* MenuTabView.swift */,
+			);
+			path = MenuTabViews;
+			sourceTree = "<group>";
+		};
+		84131B0B29DC3001001D16DD /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				84131B0729DC2BFE001D16DD /* ConnectionAlert.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84131ABE29DAE540001D16DD /* LaunchScreen.storyboard in Resources */,
+				84131AF129DB60FA001D16DD /* sf-ui-display-medium.ttf in Resources */,
+				84131B0529DC1CFD001D16DD /* sf-ui-display-bold.ttf in Resources */,
 				84131ABB29DAE540001D16DD /* Assets.xcassets in Resources */,
-				84131AB929DAE536001D16DD /* Main.storyboard in Resources */,
+				84131AF029DB60FA001D16DD /* sf-ui-display-regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +288,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84131AB629DAE536001D16DD /* ViewController.swift in Sources */,
+				84131AD729DB23F3001D16DD /* Cathegories.swift in Sources */,
+				84131ADB29DB27B8001D16DD /* Sections.swift in Sources */,
+				84131AB629DAE536001D16DD /* MenuTabController.swift in Sources */,
+				84131AE029DB2F44001D16DD /* CathegoryChipsCell.swift in Sources */,
+				84131AC829DAE648001D16DD /* MenuTabAssembly.swift in Sources */,
+				84131AE829DB30AE001D16DD /* TableHeaderView.swift in Sources */,
+				84131ACC29DAED84001D16DD /* MenuTabInteractor.swift in Sources */,
+				84131ACA29DAED2A001D16DD /* NetworkWorker.swift in Sources */,
+				84131AF929DB660F001D16DD /* SFSymbols.swift in Sources */,
+				84131AE429DB2FE4001D16DD /* MenuTableCell.swift in Sources */,
 				84131AB229DAE536001D16DD /* AppDelegate.swift in Sources */,
+				84131ACE29DAEE58001D16DD /* MenuTabPresenter.swift in Sources */,
+				84131ADD29DB2A39001D16DD /* MenuTabView.swift in Sources */,
+				84131AD229DB1957001D16DD /* MenuTabDTO.swift in Sources */,
 				84131AB429DAE536001D16DD /* SceneDelegate.swift in Sources */,
+				84131AFB29DB6622001D16DD /* ColorConstants.swift in Sources */,
+				84131AE629DB301D001D16DD /* PriceView.swift in Sources */,
+				84131B0829DC2BFE001D16DD /* ConnectionAlert.swift in Sources */,
+				84131AC629DAE5CD001D16DD /* TabAssembly.swift in Sources */,
+				84131AF729DB65F6001D16DD /* Fonts.swift in Sources */,
+				84131AEA29DB4DF0001D16DD /* CityBarItem.swift in Sources */,
+				84131AD929DB2605001D16DD /* MenuTabEntity.swift in Sources */,
+				84131AE229DB2F81001D16DD /* MenuBannerCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84131AB729DAE536001D16DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84131AB829DAE536001D16DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84131ABC29DAE540001D16DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9AA2WVYD3W;
@@ -292,7 +455,6 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9AA2WVYD3W;
@@ -320,7 +483,6 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
