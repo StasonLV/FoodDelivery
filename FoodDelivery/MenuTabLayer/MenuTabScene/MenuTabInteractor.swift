@@ -17,13 +17,41 @@ protocol FetchingLogic: AnyObject {
         ) -> ())
 }
 
+protocol SavingLogic {
+    func saveMenuArray(array: [MenuTabEntity])
+    func loadMenuArray() -> [MenuTabEntity]
+}
+
 final class MenuTabInteractor {
     
     private let group = DispatchGroup()
     private let worker: NetworkWorker
+    lazy var menuData = [MenuTabEntity]()
+    private let savedMenuKey = "My key"
+    private let defaults = UserDefaults.standard
     
     init(worker: NetworkWorker) {
         self.worker = worker
+    }
+}
+
+extension MenuTabInteractor: SavingLogic {
+    func saveMenuArray(array: [MenuTabEntity]) {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(array) {
+            defaults.set(encoded, forKey: savedMenuKey)
+            print(encoded)
+        }
+    }
+    
+    func loadMenuArray() -> [MenuTabEntity] {
+        if let savedMenu = defaults.object(forKey: savedMenuKey) as? Data {
+            let decoder = JSONDecoder()
+            if let loadedMenu = try? decoder.decode([MenuTabEntity].self, from: savedMenu) {
+                menuData = loadedMenu
+            }
+        }
+        return menuData
     }
 }
 

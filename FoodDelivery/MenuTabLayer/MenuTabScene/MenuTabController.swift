@@ -28,6 +28,7 @@ final class MenuTabController: UIViewController {
         super.viewDidLoad()
         presenter.onViewAttached(controller: self)
         configAppearance()
+        addSaveNotificationOnAppDismiss()
     }
     
     override func loadView() {
@@ -53,6 +54,19 @@ extension MenuTabController: DisplayingLogic {
     
     func didScroll(state: ScrollState) {
         menuTabView.didScroll(state: state)
+    }
+}
+
+extension MenuTabController {
+    @objc private func presenterSaveMenu() {
+        presenter.saveMenuArray()
+    }
+    func addSaveNotificationOnAppDismiss() {
+        let saveNotification = NotificationCenter.default
+                 saveNotification.addObserver(self,
+                                              selector: #selector(presenterSaveMenu),
+                                              name: UIScene.willDeactivateNotification,
+                                              object: nil)
     }
 }
 

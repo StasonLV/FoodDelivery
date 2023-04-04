@@ -17,6 +17,10 @@ protocol PresentationLogic: AnyObject {
     func onViewAttached(controller: MenuTabController)
 }
 
+protocol OnAppDisnissLogic {
+    func saveMenuArray()
+}
+
 final class MenuTabPresenter {
     
     private let interactor: MenuTabInteractor
@@ -72,7 +76,7 @@ extension MenuTabPresenter: PresentationLogic {
                     completion(data)
                 }
             case .failure(let error):
-                print("ERROR --> \(error)")
+                print("Error: \(error)")
             }
         }
     }
@@ -80,6 +84,12 @@ extension MenuTabPresenter: PresentationLogic {
     func onViewAttached(controller: MenuTabController) {
         self.controller = controller
         fetchData()
+    }
+}
+
+extension MenuTabPresenter: OnAppDisnissLogic {
+    func saveMenuArray() {
+        interactor.saveMenuArray(array: self.foodArray)
     }
 }
 
@@ -97,7 +107,9 @@ private extension MenuTabPresenter {
                     self.controller?.reloadData()
                 }
             case .failure( _):
+                self.foodArray.append(contentsOf: self.interactor.loadMenuArray())
                 DispatchQueue.main.async {
+                    self.controller?.reloadData()
                     self.controller?.present(AppAlerts.connectionAlert, animated: true)
                 }
             }

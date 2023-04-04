@@ -103,7 +103,6 @@
 			children = (
 				84131ABF29DAE540001D16DD /* Info.plist */,
 				84131AF429DB653E001D16DD /* ApplicationLayer */,
-				84131AD029DB1925001D16DD /* DataTransfer */,
 				84131ACF29DB1889001D16DD /* NetworkLayer */,
 				84131AD329DB1B0A001D16DD /* MenuTabLayer */,
 			);
@@ -118,24 +117,22 @@
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
-		84131AD029DB1925001D16DD /* DataTransfer */ = {
+		84131AD029DB1925001D16DD /* MenuTabDataTransfer */ = {
 			isa = PBXGroup;
 			children = (
 				84131AD129DB1957001D16DD /* MenuTabDTO.swift */,
 			);
-			path = DataTransfer;
+			path = MenuTabDataTransfer;
 			sourceTree = "<group>";
 		};
 		84131AD329DB1B0A001D16DD /* MenuTabLayer */ = {
 			isa = PBXGroup;
 			children = (
+				84131AD029DB1925001D16DD /* MenuTabDataTransfer */,
+				84131B0C29DC4E50001D16DD /* MenuTabScene */,
 				84131B0A29DC2FE8001D16DD /* MenuTabViews */,
 				84131B0929DC2FCA001D16DD /* DataStructures */,
 				84131ADE29DB2F29001D16DD /* Cells */,
-				84131AC729DAE648001D16DD /* MenuTabAssembly.swift */,
-				84131ACB29DAED84001D16DD /* MenuTabInteractor.swift */,
-				84131AB529DAE536001D16DD /* MenuTabController.swift */,
-				84131ACD29DAEE58001D16DD /* MenuTabPresenter.swift */,
 			);
 			path = MenuTabLayer;
 			sourceTree = "<group>";
@@ -191,9 +188,9 @@
 		84131B0929DC2FCA001D16DD /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				84131AD829DB2605001D16DD /* MenuTabEntity.swift */,
 				84131AD629DB23F3001D16DD /* Cathegories.swift */,
 				84131ADA29DB27B8001D16DD /* Sections.swift */,
-				84131AD829DB2605001D16DD /* MenuTabEntity.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -213,6 +210,17 @@
 				84131B0729DC2BFE001D16DD /* ConnectionAlert.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		84131B0C29DC4E50001D16DD /* MenuTabScene */ = {
+			isa = PBXGroup;
+			children = (
+				84131AC729DAE648001D16DD /* MenuTabAssembly.swift */,
+				84131AB529DAE536001D16DD /* MenuTabController.swift */,
+				84131ACD29DAEE58001D16DD /* MenuTabPresenter.swift */,
+				84131ACB29DAED84001D16DD /* MenuTabInteractor.swift */,
+			);
+			path = MenuTabScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

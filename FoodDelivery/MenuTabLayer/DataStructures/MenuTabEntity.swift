@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MenuTabEntity {
+struct MenuTabEntity: Codable, Equatable {
     let id: Int
     let title: String
     let image: String

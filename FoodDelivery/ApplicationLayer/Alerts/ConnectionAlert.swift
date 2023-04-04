@@ -11,7 +11,7 @@ enum AppAlerts {
     static let connectionAlert: UIAlertController = {
         let alert = UIAlertController(
             title: "Не удалось загрузить меню",
-            message: "У Вас отсутствует доступ к сети. Пожалуйста, проверьте соединение",
+            message: "У Вас отсутствует доступ к сети. Пожалуйста, проверьте соединение, а пока мы подгрузим последние данные",
             preferredStyle: .alert
         )
         let actionClose = UIAlertAction(title: "Хорошо", style: .default)
